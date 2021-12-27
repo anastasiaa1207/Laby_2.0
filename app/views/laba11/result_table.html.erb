@@ -1,0 +1,19 @@
+<h1>Found twin numbers</h1>
+
+<table class="table table-bordered w-auto">
+  <tr>
+    <th>#</th>
+    <th>Pair</th>
+  </tr>
+  <% @values.each_with_index do |pair, index| %>
+    <tr>
+      <td><%= index + 1 %></td>
+      <td><%= pair %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Back to input", laba11_enter_form_path, class: 'btn btn-outline-info' %> <br> <br>
+
+<h5>XML of DB:</h5> <br>
+<%= @xml %>

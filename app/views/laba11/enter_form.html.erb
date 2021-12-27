@@ -1,0 +1,7 @@
+<h1> Input page</h1>
+
+<%= form_with url: laba11_result_table_path, class:'mb-3', method: :get do |form| %>
+  <%= form.label :input, 'Enter limit number' %> <br>
+  <%= form.number_field :input, in: 1..Float::INFINITY, style:'width: 200px', step: 1, placeholder: "100", required: true, class: "form-control" %> <br>
+  <%= form.submit 'Calculate', class: 'btn btn-primary' %>
+<% end %>
