@@ -1,0 +1,22 @@
+<h3>
+  ЛР №9 <br>
+  Выполнил студент ИУ6-34Б <br>
+  Гусева Анастасия<br>
+  Вариант №6 <br>
+  Текст задания:<br>
+</h3>
+<br>
+Дано натуральное число n. Написать программу, определяющую, есть <br>
+ли среди чисел n, n + 1, n + 2, . . . 2n близнецы, то есть простые числа, <br>
+разность между которыми равна 2. Например, 11 и 13, 17 и 19. Вывести <br>
+на печать все обнаруженные пары, а если таких пар нет, то соответствующее сообщение. <br>
+</h5>
+<%= form_with url: result_path, id: 'form', method: :get do |form| %>
+  <%= form.label :input, "Enter n", style: "font-size: 24px" %> <br>
+  <%= form.number_field :input, in: 1..100000, step: 1, placeholder: "10", class: "in-form" %> <br> <br>
+  <%= form.submit "Enter", id: "submit", class:"btn btn-primary" %>
+<% end %>
+
+<br>
+
+<div id="result"></div>

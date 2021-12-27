@@ -1,0 +1,15 @@
+<% if numbers.empty? %>
+  No twins numbers found
+<%  else  %>
+  <table id="res_table" class="table table-bordered table-hover w-auto">
+    <tr>
+      <td> Result </td>
+    </tr>
+    <% numbers.each_line do |val| %>
+      <tr>
+        <td> <%= val %> </td>
+      </tr>
+    <% end %>
+  </table>
+
+<%  end %>
